@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center g-4">
+    <!-- About Me Column -->
+    <div class="col-lg-6 col-md-12">
+      <div class="glass p-4 h-100">
+        <div class="text-center mb-4">
+          <h1 class="display-5">About Me</h1>
+        </div>
+        <p class="lead">
+          Hey, I’m <strong>Shahzaib</strong> – a Python developer, freelance ninja, and soon-to-be full-stack engineer.
+        </p>
+        <h4 class="mt-4">Tech-Stacks</h4>
+        <ul>
+          <li>I live and breathe code</li>
+          <li>Craft smart solutions</li>
+          <li>Occasionally write bugs I pretend are features 😅</li>
+        </ul>
+        <h4 class="mt-4">Specializations</h4>
+        <ul>
+          <li>Fast, clean, and scalable web apps using Flask, Python, and JavaScript</li>
+          <li>Flight price tracker with Amadeus API</li>
+          <li>Obsessed with clean logic, minimal UIs, and real-world impact</li>
+        </ul>
+        <p class="mt-3">
+          When I’m not coding, I’m learning, tweaking side projects, or sipping black coffee like it’s a ritual.
+        </p>
+        <p>Let’s build something awesome together.<br>Feel free to contact me via social media or <a id="contact" href="/contact">contact form</a> .</p>
+      </div>
+    </div>
+
+    <!-- Skills Column -->
+    <div class="col-lg-6 col-md-12">
+      <div class="glass p-4 h-100">
+        <div class="text-center mb-4">
+          <h1 class="mb-4">Skill Progress</h1>
+        </div>
+
+        {% set skills = [
+          {'name': 'Python', 'level': 90, 'color': 'success'},
+          {'name': 'Flask', 'level': 80, 'color': 'info'},
+          {'name': 'Selenium', 'level': 87, 'color': 'warning text-dark'},
+          {'name': 'Playwright', 'level': 85, 'color': 'danger'},
+          {'name': 'Beautiful Soup', 'level': 92, 'color': 'dark'},
+          {'name': 'API', 'level': 83, 'color': 'primary'}
+        ] %}
+
+        {% for skill in skills %}
+        <div class="mb-4">
+          <h4 class="text-start">{{ skill.name }}</h4>
+          <div class="progress" style="height: 25px;">
+            <div class="progress-bar bg-{{ skill.color }} progress-bar-striped progress-bar-animated"
+                 role="progressbar"
+                 style="width: {{ skill.level }}%;"
+                 aria-valuenow="{{ skill.level }}"
+                 aria-valuemin="0"
+                 aria-valuemax="100">
+              {{ skill.level }}%
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!-- Resume Download Button -->
+  <div class="text-center mt-5">
+    <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-lg btn-primary" download>
+      <i class="bi bi-download me-2"></i>Download My Resume
+    </a>
+  </div>
+
+</div>
+{% endblock %}

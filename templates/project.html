@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="glass position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center "> 
+    <div class="col-md-6 p-lg-5 mx-auto my-5"> 
+        <h1 class="display-3 fw-bold">My Projects</h1> 
+        <h3 class="fw-normal text-muted mb-3">Some reflections of my Hard Work</h3> 
+    </div> 
+</div>
+
+<div class="album py-5 "> 
+    <div class="container"> 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+            <div class="col">
+                <div class="card shadow-sm glass">
+                <img src="{{ url_for('static', filename='images/my mini.png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">
+
+                    <div class="card-body">
+                    <p class="card-text">Turn any text into clear, spoken audio using Python. Great for accessibility and productivity.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm glass">
+                    <img src="{{ url_for('static', filename='images/flight.png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">                    
+                    <div class="card-body">
+                    <p class="card-text">Tracks flight prices over time using Amadeus API. Alerts users to drops, deals, and ranges.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm glass">
+                    <img src="{{ url_for('static', filename='images/main(2).png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">
+                    <div class="card-body">
+                    <p class="card-text">Tracks multiple Amazon products for price drops and changes. Perfect for deal hunters.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm glass">
+                    <img src="{{ url_for('static', filename='images/snake.png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">
+                    <div class="card-body">
+                    <p class="card-text">Classic Snake game built from scratch in Python. Old-school fun meets modern code.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm glass">
+                    <img src="{{ url_for('static', filename='images/morse light.png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">
+                    <div class="card-body">
+                    <p class="card-text">Convert plain text into Morse code instantly. Simple, fast, and great for basic encryption tasks.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class="card shadow-sm glass">
+                    <img src="{{ url_for('static', filename='images/flash cards.png') }}" class="card-img-top" alt="My Project Thumbnail" height="225" style="object-fit: cover;">
+                    <div class="card-body">
+                    <p class="card-text">Learn French words fast with a flashcard-style app. Shuffle, test, and master vocab on repeat.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+        </div> 
+    </div> 
+</div> 
+
+<div class="container mt-4">
+    <p class="text-start fs-5">
+        See my other projects on <a id = "git" href="https://github.com/codev000X" target="_blank">GitHub</a>
+    </p>
+</div>
+{% endblock %}

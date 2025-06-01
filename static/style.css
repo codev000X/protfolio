@@ -1,0 +1,121 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#web {
+  color: #000000
+}
+
+#contact , #git{
+  color:rgb(10, 141, 108)
+}
+
+body {
+  background: linear-gradient(135deg, #ffd2a5, #bdedf9, #d9cdd9, #ffe4f4);
+  background-size: 300% 300%;
+  animation: chillGradient 20s ease infinite;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Optional: code-like parts */
+code, pre, .monospace {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes chillGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  padding: 2rem;
+}
+
+.card-body.glass {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.social-icons a svg {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+/* Unified nav + brand link hover effect */
+.nav a:hover {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+/* Optional: initial link color consistency */
+.nav a{
+  color: #000;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  
+}
+
+.nav a:hover,
+.brand:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 5px rgba(10, 214, 170, 0.4);
+}
+
+.card.glass {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+
+/* Optional: Beautiful hover effects */
+input.form-control, textarea.form-control {
+  transition: all 0.3s ease-in-out;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+  box-shadow: 0 0 10px rgba(0, 214, 255, 0.5);
+  border-color: #00d6ff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg,rgba(22, 178, 149, 0.63),rgba(23, 236, 236, 0.64));
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg,rgba(4, 52, 45, 0.92),rgb(7, 195, 242));
+  box-shadow: 0 0 10px rgba(254, 254, 6, 0.5);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}

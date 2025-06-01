@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% set is_glass = True %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<main class="glass container text-center flex-grow-1 d-flex flex-column justify-content-center align-items-center mt-4 py-5">
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+        <div class="col-12 col-sm-8 col-lg-6 d-flex justify-content-center">
+            <img src="./static/images/zaib.jpg" 
+                class="img-fluid rounded-circle mx-auto d-block" 
+                alt="Bootstrap Themes" 
+                style="max-width: 300px; height: auto;" 
+                loading="lazy">
+        </div>
+
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis fs-1 lh-2 mb-3 text-nowrap">I'm Shahzaib Khalid</h1> 
+                <div class="container">
+                <p class="lead">Self-taught dev with drive<br>
+                    Code each day, feel alive<br>
+                    Had great guides on side<br>
+                    With their spark, I rise<br>
+                    
+                    <br>
+                    API calls, scripts that hum<br>
+                    Clean and crisp - never dumb<br>
+                    Coffee fuels my bold quest<br>
+                    Bug or build, I try my best<br></p>
+                    
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="{{ url_for('projects') }}" class="btn btn-lg btn-primary">Check My Mork</a> 
+                </div> 
+                </div>
+            </div> 
+    </div> 
+</div>
+</main>
+{% endblock %}
