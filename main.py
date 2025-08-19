@@ -22,7 +22,6 @@ def contact():
         name = request.form['name']
         email = request.form['email']
         message = request.form['message']
-        print(name, email, message)  # or save to DB, send email, etc.
         return redirect('/thank-you')  # or flash a message
     return render_template('contact.html')
 
@@ -34,7 +33,7 @@ def thank_you():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
 
 
